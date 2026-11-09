@@ -1,16 +1,14 @@
 -- COMP 3005 Assignment 3 - Question 1
--- Table definition and initial data for the students table.
---
--- Spec:
---   student_id       Integer, Primary Key, Auto-increment
---   first_name       Text, Not Null
---   last_name        Text, Not Null
---   email            Text, Not Null, Unique
---   enrollment_date  Date
---
--- Initial data (3 rows): John Doe, Jane Smith, Jim Beam.
--- Do not put CREATE DATABASE in this file; create the database separately.
 
--- TODO: CREATE TABLE students (...);
+CREATE TABLE students (
+    student_id INTEGER SERIAL PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL, UNIQUE,
+    enrollment_date DATE
+);
 
--- TODO: INSERT INTO students (first_name, last_name, email, enrollment_date) VALUES ...;
+INSERT INTO students (first_name, last_name, email, enrollment_date) VALUES
+('John', 'Doe', 'john.doe@example.com', '2023-09-01'),
+('Jane', 'Smith', 'jane.smith@example.com', '2023-09-01'),
+('Jim', 'Beam', 'jim.beam@example.com', '2023-09-02');
