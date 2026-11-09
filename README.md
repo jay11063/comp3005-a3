@@ -1,9 +1,9 @@
-# COMP 3005 Assignment 3 — Student Records Application
+# COMP 3005 Assignment 3 - Student Records Application
 
 A command-line application that connects to a PostgreSQL database and performs
 CRUD operations on a `students` table.
 
-Jaeyoon Lee — 101272513 — COMP3005 B, Fall 2026
+Jaeyoon Lee - 101272513 - COMP3005 B, Fall 2026
 
 ## Demonstration video
 
