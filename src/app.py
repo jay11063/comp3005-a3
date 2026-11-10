@@ -117,8 +117,8 @@ def delete_student(student_id):
 
 def main():
     """Menu loop so each function can be demonstrated in the video."""
-    print("COMP3005 Assignment 3 - Student DB")
     while True:
+        print("COMP3005 Assignment 3 - Student DB")
         print("1. List all students")
         print("2. Add a student")
         print("3. Update a student's email")
@@ -167,6 +167,7 @@ def main():
 
         else:
             print("Invalid option.")
+        print("")
 
 if __name__ == "__main__":
     main()
