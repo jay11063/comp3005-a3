@@ -56,7 +56,7 @@ def add_student(first_name, last_name, email, enrollment_date):
                 cursor.execute(
                     """
                     INSERT INTO students (first_name, last_name, email, enrollment_date)
-                    VALUE (%s, %s, %s, %s);
+                    VALUES (%s, %s, %s, %s);
                     """,
                     (first_name, last_name, email, enrollment_date)
                 )
