@@ -25,13 +25,15 @@ def get_all_students():
     try:
         with psycopg2.connect(**DB_SETTINGS) as connection:
             with connection.cursor() as cursor:
-                students = cursor.execute(
+                cursor.execute(
                     """
                     SELECT student_id, first_name, last_name, email, enrollment_date
-                    FROM student
+                    FROM students
                     ORDER BY student_id;
                     """
-                ).fetchall()
+                )
+
+                students = cursor.fetchall()
 
                 if not students:
                     print("No students found.")
