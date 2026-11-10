@@ -112,7 +112,7 @@ def delete_student(student_id):
                 print(f"Successfully delete student ID {student_id}")
 
     except Exception as e:
-        print(f"Error: Failed to delete student: {e}")
+        print(f"Error: Failed to deleted student: {e}")
 
 
 def main():
@@ -165,6 +165,8 @@ def main():
         elif choice == "0":
             return
 
+        else:
+            print("Invalid option.")
 
 if __name__ == "__main__":
     main()
